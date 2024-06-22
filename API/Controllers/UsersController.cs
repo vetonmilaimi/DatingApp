@@ -20,7 +20,6 @@ public class UsersController : BaseApiController
   [HttpGet]
   public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
   {
-    Console.WriteLine("Hello");
     return await _context.Users.ToListAsync();
   }
 
